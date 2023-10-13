@@ -11,7 +11,15 @@ class PersonalDataDisplay extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Data Personal'),
+        title: Text("LIST PERSONAL DATA",
+            style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+                color: Colors.black)),
+        backgroundColor: Colors.white,
+        iconTheme: IconThemeData(
+            color: Colors
+                .black), // Ubah warna ikon kembali (back icon) menjadi hitam
       ),
       body: ListView.builder(
         itemCount: data?.length,
@@ -34,7 +42,10 @@ class PersonalDataDisplay extends StatelessWidget {
                 ),
                 Text(
                   'Email: ${item?['Email']}',
-                  style: TextStyle(color: Colors.blue), // Warna teks biru
+                  style: TextStyle(
+                    color: Colors.blue, // Warna teks biru
+                    // Rata kiri
+                  ),
                 ),
                 Text('Address: ${item?['Address']}'),
                 // Text('Tanggal Lahir: ${item?['BirthDate']}'),
