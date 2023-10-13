@@ -1,11 +1,11 @@
-//2F_362258302037_Sandi Sukoco Putro
+//2F Sandi S
 
 import 'package:flutter/material.dart';
 import 'ui/personal_form.dart';
 
 void main() {
   runApp(MaterialApp(
-    title: "Latihan Flutter 23 9 23",
+    title: "Assesment Flutter 13 10 23",
     //delete debug banner
     debugShowCheckedModeBanner: false,
     home: PersonalDataForm(),
